@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CONTACT US</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Information Bar -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="hours">
+          <span
+            >🕒 Opening hours: Mon-Fri: 8.00am-5.15pm | Sat: 7.00am-1.00pm |
+            Sun: 7.00am-1.00pm</span
+          >
+        </div>
+        <div class="topbar-right">
+          <div class="contact-info">
+            <a href="tel:0862560068"><span>☎</span> 08 62560068</a>
+            <a href="mailto:info@lakesmedicalcentre.com"
+              ><span>✉</span> info@lakesmedicalcentre.com</a
+            >
+          </div>
+          <a class="appointment-top" href="#appointment">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <img
+            class="logo-img"
+            src="images/logo.png"
+            alt="LMC - Lakes Medical Centre logo"
+          />
+          <div class="logo-text-group">
+            <span class="logo-title">Lakes Medical Centre</span>
+          </div>
+        </a>
+        <nav class="nav">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="services.html">SERVICES</a>
+          <a href="fees.html">FEES</a>
+          <a href="team.html">OUR TEAM</a>
+          <a class="active" href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="tag">GET IN TOUCH</span>
+          <h1>CONTACT LAKES MEDICAL CENTRE</h1>
+          <p class="hero-sub">
+            We're here to assist you and your family. Reach out via phone,
+            email, visit our South Lake clinic, or submit an appointment request
+            online.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#appointment"
+              >Request Appointment</a
+            >
+            <a class="btn btn-outline" href="#location">Find Location</a>
+          </div>
+        </div>
+        <div class="hero-art_Home">
+          <img
+            src="images/CONTACT%20-%20Copy.jpg"
+            alt="Lakes Medical Centre doctors and nurses"
+          />
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Contact & Booking Section -->
+      <section class="section alt" id="location">
+        <div class="container contact-grid">
+          <!-- Contact Details & Map -->
+          <div class="contact-box">
+            <h3>Get in Touch</h3>
+            <div class="contact-item">
+              <div class="ci">☎</div>
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:0862560068">08 62560068</a></span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci">✉</div>
+              <div>
+                <strong>Email</strong>
+                <span
+                  ><a href="mailto:info@lakesmedicalcentre.com"
+                    >info@lakesmedicalcentre.com</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci">📍</div>
+              <div>
+                <strong>Practice Location</strong>
+                <span>1 S Lake Dr, South Lake WA 6164</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci">🕒</div>
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Mon–Fri: 8.00am–5.15pm<br />Sat–Sun: 7.00am–1.00pm</span>
+              </div>
+            </div>
+
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps?q=Lakes+Medical,+1+S+Lake+Dr,+South+Lake+WA+6164&output=embed"
+                width="100%"
+                height="260"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Lakes Medical location map"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Appointment Form -->
+          <div class="contact-box" id="appointment">
+            <h3>Request an Appointment</h3>
+            <form
+              class="form"
+              action="#"
+              method="post"
+              onsubmit="
+                event.preventDefault();
+                alert(
+                  'Thank you! Your appointment request has been submitted. Our triage staff will contact you shortly.',
+                );
+              "
+            >
+              <input type="text" placeholder="Full Name" required />
+              <input type="tel" placeholder="Phone Number" required />
+              <input type="email" placeholder="Email Address" />
+              <select required>
+                <option value="" disabled selected>
+                  Select Consultation Service
+                </option>
+                <option value="General Practice">
+                  General Practice Consultation
+                </option>
+                <option value="Family Health">
+                  Family &amp; Pediatric Care
+                </option>
+                <option value="Skin Check">
+                  Skin Check &amp; Mole Scanning
+                </option>
+                <option value="Immunisation">
+                  Immunisation &amp; Vaccines
+                </option>
+                <option value="Chronic Disease">
+                  Chronic Disease Management
+                </option>
+                <option value="Other">Other Medical Enquiry</option>
+              </select>
+              <input type="date" />
+              <textarea
+                placeholder="Describe your symptoms or appointment notes..."
+              ></textarea>
+              <button class="btn btn-primary" type="submit">
+                Submit Appointment Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Site Footer (100% Aligned with Closed Tags) -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Lakes Medical Centre</h3>
+          <p>Quality healthcare for every stage of life.</p>
+          <p style="margin-top: 10px; color: #a2c6d0">
+            Healthy Families • Healthier Communities
+          </p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="services.html">SERVICES</a>
+          <a href="fees.html">FEES</a>
+          <a href="team.html">OUR TEAM</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="contact-location">
+          <h3>Contact &amp; Location</h3>
+
+          <p>
+            <span class="contact-icon">☎</span>
+            <span>08 62560068</span>
+          </p>
+
+          <p>
+            <span class="contact-icon">✉</span>
+            <span>info@lakesmedicalcentre.com</span>
+          </p>
+
+          <p>
+            <span class="contact-icon">📍</span>
+            <span>South Lake Drive, South Lake, WA 6164</span>
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        Copyright © 2022 Lakes Medical Centre. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
+</html>
